@@ -3454,6 +3454,10 @@ def create_media(config, filename, file_fieldname, node_id, csv_row, media_use_t
                 "field_media_use": [{
                     "target_id": media_use_tids[0],
                     "target_type": 'taxonomy_term'
+                }],
+                "field_access_terms": [{
+                    "target_id": csv_row['field_access_terms'],
+                    "target_type": 'taxonomy_term'
                 }]
             }
         # Create a media from a local or remote file.
